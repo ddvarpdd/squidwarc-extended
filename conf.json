@@ -28,7 +28,7 @@
 	},
 	"http": {
 	  "enabled": true,
-	  "endpoint": "http://localhost:3010/"
+	  "endpoint": "http://localhost:3001/"
 	}
   }
 }
