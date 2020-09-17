@@ -24,7 +24,7 @@
   "logging": {
     "file": {
 	  "enabled": true,
-	  "dir": "./output"
+	  "path": "./output/test.txt"
 	},
 	"http": {
 	  "enabled": true,
