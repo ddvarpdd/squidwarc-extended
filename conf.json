@@ -1,11 +1,9 @@
 {
   "use": "puppeteer",
-  "headless": true,
+  "headless": false,
   "script": "./userFns.js",
-  "mode": "page-only",
-  "depth": 1,
   "seeds": [
-    "https://www.instagram.com/visit_berlin/"
+    "http://jtconcept.free.fr/"
   ],
   "warc": {
     "naming": "url"
@@ -19,6 +17,18 @@
     "globalWait": 60000,
     "inflightIdle": 1000,
     "numInflight": 2,
-    "navWait": 8000
+    "navWait": 8000,
+	"mode": "page-same-domain",
+    "depth": 9999999999
+  },
+  "logging": {
+    "file": {
+	  "enabled": true,
+	  "dir": "./output"
+	},
+	"http": {
+	  "enabled": true,
+	  "endpoint": "http://localhost:3010/"
+	}
   }
 }
