@@ -29,6 +29,7 @@
     "pretty-error": "^2.1.1",
     "pretty-ms": "^4.0.0",
     "puppeteer": "^1.12.1",
+    "request-json": "^0.6.5",
     "string": "^3.3.3",
     "untildify": "^3.0.3",
     "uuid": "^3.3.2",
