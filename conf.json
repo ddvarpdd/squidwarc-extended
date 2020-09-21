@@ -24,11 +24,12 @@
   "logging": {
     "file": {
 	  "enabled": true,
-	  "path": "./output/test.txt"
+	  "path": "./output/text.txt"
 	},
 	"http": {
 	  "enabled": true,
-	  "endpoint": "http://localhost:3001/"
+	  "endpoint": "http://localhost:3001/",
+	  "apikey": "my-api-key"
 	}
   }
 }
