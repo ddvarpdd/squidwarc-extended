@@ -1,0 +1,47 @@
+{
+  "use": "puppeteer",
+  "headless": false,
+  "script": "./userFns.js",
+  "depth": 1,
+  "seeds": [
+    "https://www.bios-bioenergy.at/"
+  ],
+  "warc": {
+    "naming": "url",
+	"output": "./output/"
+  },
+  "connect": {
+    "launch": true,
+    "host": "localhost",
+    "port": 9222
+  },
+  "crawlControl": {
+    "globalWait": 60000,
+    "inflightIdle": 1000,
+    "numInflight": 2,
+    "navWait": 8000,
+	"mode": "page-same-domain",
+    "depth": 9999999999
+  },
+  "logging": {
+    "file": {
+	  "enabled": true,
+	  "output": "./output/log.json"
+	},
+	"http": {
+	  "enabled": true,
+	  "endpoint": "http://asgdev.fr:3011/",
+	  "apikey": "f32a8e32-3bf1-4fb4-ac2d-974352912f2a"
+	},
+	"collection": {
+		"unvisited": {
+		  "enabled": true,
+		  "output": "./output/unvisited.txt"
+		},
+		"errored": {
+		  "enabled": true,
+		  "output": "./output/errored.txt"
+		}
+	}
+  }
+}
