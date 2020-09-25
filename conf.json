@@ -29,9 +29,7 @@
 	  "output": "./output/log.json"
 	},
 	"http": {
-	  "enabled": true,
-	  "endpoint": "http://asgdev.fr:3011/",
-	  "apikey": "f32a8e32-3bf1-4fb4-ac2d-974352912f2a"
+	  "enabled": true
 	},
 	"collection": {
 		"unvisited": {
