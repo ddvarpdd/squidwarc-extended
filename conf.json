@@ -8,38 +8,42 @@
   ],
   "warc": {
     "naming": "url",
-	"output": "./output/"
+    "output": "./output/"
   },
   "connect": {
     "launch": true,
     "host": "localhost",
     "port": 9222
   },
+  "screenshot": {
+    "enabled": false,
+    "output": "./output/sc/"
+  }
   "crawlControl": {
     "globalWait": 60000,
     "inflightIdle": 1000,
     "numInflight": 2,
     "navWait": 8000,
-	"mode": "page-same-domain",
+    "mode": "page-same-domain",
     "depth": 9999999999
   },
   "logging": {
     "file": {
-	  "enabled": true,
-	  "output": "./output/log.json"
-	},
-	"http": {
-	  "enabled": true
-	},
-	"collection": {
-		"unvisited": {
-		  "enabled": true,
-		  "output": "./output/unvisited.txt"
-		},
-		"errored": {
-		  "enabled": true,
-		  "output": "./output/errored.txt"
-		}
-	}
+      "enabled": true,
+      "output": "./output/log.json"
+    },
+    "http": {
+      "enabled": true
+    },
+    "collection": {
+      "unvisited": {
+        "enabled": true,
+        "output": "./output/unvisited.txt"
+      },
+      "errored": {
+        "enabled": true,
+        "output": "./output/errored.txt"
+      }
+    }
   }
 }
